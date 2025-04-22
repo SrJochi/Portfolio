@@ -46,9 +46,22 @@ a {
   text-decoration: none;
   color: inherit; }
 
-li {
+ul, ol {
+  font-size: 1.8rem;
+  color: grey;
+  line-height: 1.7;
+  padding-left: 2rem; /* opcional: para mantener algo de indentación */
+  margin-bottom: 2rem; /* opcional: para separar del siguiente bloque */
+}
+  
+  li {
+    margin-bottom: 0.8rem; /* separa los ítems ligeramente */
+  }
+  
+  
+/* li {
   list-style: none; }
-
+*/
 input:focus,
 button:focus,
 a:focus,
@@ -702,3 +715,4 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+ 
