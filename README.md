@@ -51,5 +51,5 @@ I’m always looking for new challenges and ways to use data to improve processe
 
 ## 📫 Contact
 
-- LinkedIn: [linkedin.com/in/joseignaciodejea](https://www.linkedin.com/in/joseignaciodejea)  
-- Email: [jochidejea97@gmail.com](jochidejea97@gmail.com)
+- LinkedIn: [linkedin.com/in/joseignaciodejea](https://www.linkedin.com/in/josé-ignacio-dejea/)
+- Email: [jochidejea97@gmail.com](mailto:jochidejea97@gmail.com)
