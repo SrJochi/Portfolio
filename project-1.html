@@ -91,7 +91,7 @@
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="https://github.com/SrJochi/IntelligentBankExpenseClassifier" class="btn btn--bg" target="_blank"> github code</a>
         </div>
       </div>
     </section>
@@ -128,32 +128,66 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">🔁 Project structure</h3>
               <p class="project-details__desc-para">
-                El proyecto está dividido en tres módulos principales, lo que facilita su reutilización y mantenimiento:<br>
-                <strong>1. data_loader.py – Carga de datos</strong><br>
-                <ul>
-                  <li>Lee un archivo Excel con movimientos bancarios.</li>
-                  <li>Extrae columnas relevantes: fecha, descripción, importe, saldo e identificador.</li>                
-                  <li>Estandariza los nombres de columna para el procesamiento posterior.</li>
-                </ul>
-                <pre><code>
-                  df = load_excel_file('files/cuenta.xls', 'Fecha valor', 'Concepto', 'Importe', 'Saldo', 'Nº mov')
-                </code></pre>
-                                  
+                The project is divided into three main modules, making it easy to reuse and maintain:<br>
+              </p>
+              <p class="project-details__desc-para"> 
+                <strong>1. Data Loader</strong><br>
+                Responsible for reading the Excel file with bank. <br>
+                It extracts the relevant columns (date, description, amount, balance, and ID), and renames them to standardized names for consistency across the project. 
+              </p>
+              <p class="project-details__desc-para"> 
+                <strong>2. Expense Classifier</strong><br>
+                Uses the OpenAI API to assign a category to each transaction based on its description. <br>
+                The list of categories can be customized via environment variables. The function also handles edge cases like empty or malformed descriptions.
+              </p>
+              <p class="project-details__desc-para"> 
+                <strong>3. Main Execution Script</strong><br>
+                Coordinates the entire workflow: <br>
+                🔹  Loads the Excel file <br>
+                🔹  Classifies each transaction <br>
+                🔹  Exports the final result with an additional column for the category
               </p>
             </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">📁 Folder Structure</h3>
+              <p class="project-details__desc-para">
+                Typical layout of the project directory:<br>
+                <img src="assets/png/folder_structure.png" alt="Folder Structure" />
+              </p>  
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">🌐 Key Features</h3>
+              <p class="project-details__desc-para" style="margin-left: 2em;">
+                ✅ Automatic classification using natural language <br>
+                ✅ Customizable categories via environment file <br>
+                ✅ Works with real banking data formats <br>
+                ✅ Modular, clean and maintainable code
+              </p>  
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">🔒 Security and Config</h3>
+              <p class="project-details__desc-para">
+                API keys and category settings are stored securely in a .env file, which is not tracked by version control. <br>
+                Example content: <br>
+                <img src="assets/png/security_config.png" alt="Security and Config" />
+              </p>  
+            </div>
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">📌 Future Improvements</h3>
+              <p class="project-details__desc-para" style="margin-left: 2em;">
+                🔹Add data visualizations using Power BI or matplotlib <br>
+                🔹Offline classification with local machine learning models <br>
+                🔹Export to other formats (CSV, JSON) <br>
+                🔹Create a simple web interface to upload and view results
+              </p>  
+            </div>
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">Code Link</h3>
               <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
+                href="https://github.com/SrJochi/IntelligentBankExpenseClassifier"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
-                >Code Link</a
+                >Github</a
               >
             </div>
           </div>
